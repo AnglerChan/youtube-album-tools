@@ -1,0 +1,24 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+
+# Downloaded audio/video sources
+downloads/*.mp4
+downloads/*.m4a
+downloads/*.webm
+downloads/*.opus
+downloads/*.ogg
+downloads/batch-runs/
+
+# Album output
+output/batch-runs/
+output/*/
+
+# Unrelated projects
+OneShot/
+XcodeBuildMenuBar/
+
+# IDE
+.vscode/
+.idea/
