@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube Album Splitter"
+  short_description: "Download best audio, split tracks, enrich Discogs metadata"
+  default_prompt: "Process a YouTube album URL: download highest quality audio, split tracks by chapters/description/Discogs durations, fetch Discogs metadata and cover, then return only the output folder path."

@@ -21,7 +21,7 @@ DEFAULT_OUTPUT_ROOT = TOOLS_ROOT / "output"
 DEFAULT_PROCESSOR = Path(
     os.environ.get(
         "YOUTUBE_ALBUM_PROCESSOR",
-        "/Users/haoxiangliu/.codex/skills/youtube-album-splitter-discogs/scripts/process_youtube_album.py",
+        str(TOOLS_ROOT / "scripts" / "process_youtube_album.py"),
     )
 )
 

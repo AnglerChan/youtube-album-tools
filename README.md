@@ -13,6 +13,10 @@ Split YouTube albums into tagged MP3 tracks with Discogs metadata and cover art.
 
 ## Scripts
 
+### `SKILL.md`
+
+Codex skill definition for the end-to-end YouTube album splitter workflow.
+
 ### `process_youtube_album.py`
 
 Process a single YouTube album URL:
@@ -50,3 +54,12 @@ python3 scripts/validate_album_outputs.py --fix ./output/some-album
 ## Discogs Setup
 
 Set the `DISCOGS_TOKEN` environment variable or configure a Discogs API access token before running.
+
+## Included Skill Resources
+
+- `SKILL.md`: agent workflow and output contract
+- `scripts/process_youtube_album.py`: single-album downloader, splitter, and Discogs enricher
+- `scripts/batch_process_albums.py`: batch runner for URL lists
+- `scripts/validate_album_outputs.py`: output validator and repair helper
+- `references/metadata-strategy.md`: matching and fallback strategy
+- `agents/openai.yaml`: agent interface metadata

@@ -13,10 +13,8 @@ from pathlib import Path
 from typing import Any
 
 
-DEFAULT_PROCESSOR = Path(
-    "/Users/haoxiangliu/.codex/skills/youtube-album-splitter-discogs/scripts/process_youtube_album.py"
-)
 TOOLS_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_PROCESSOR = TOOLS_ROOT / "scripts" / "process_youtube_album.py"
 DEFAULT_OUTPUT_ROOT = TOOLS_ROOT / "output"
 AUDIO_EXTS = {".mp3", ".flac", ".m4a", ".aac", ".wav", ".ogg", ".opus"}
 GOOD_OUTPUT_EXTS = {".mp3"}
